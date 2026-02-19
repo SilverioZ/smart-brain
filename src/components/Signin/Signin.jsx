@@ -17,9 +17,8 @@ class Signin extends React.Component {
   onPasswordChange = (event) => {
     this.setState({signInPassword: event.target.value})
   }
-
-  onSubmitSignIn = () => {
-    fetch('https://smart-brain-api-mvcs.onrender.com', {
+	onSubmitSignIn = () => {
+    fetch('http://localhost:5432/signin', {
       method: 'post',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
@@ -79,3 +78,4 @@ class Signin extends React.Component {
 
 
 export default Signin;
+
