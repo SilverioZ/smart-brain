@@ -2,10 +2,10 @@ import React from 'react';
 import './Signin.css'
 
 
-class Signin extends React.Component { 
+class Signin extends React.Component {
   constructor(props) {
     super(props);
-    this.state ={https://github.com/SilverioZ/smart-brain/blob/main/src/components/Signin/Signin.jsx
+    this.state = {
       signInEmail: '',
       signInPassword: ''
     }
@@ -78,6 +78,7 @@ class Signin extends React.Component {
 
 
 export default Signin;
+
 
 
 
