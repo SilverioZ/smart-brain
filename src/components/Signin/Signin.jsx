@@ -18,7 +18,7 @@ class Signin extends React.Component {
     this.setState({signInPassword: event.target.value})
   }
 	onSubmitSignIn = () => {
-    fetch(`${BACKEND_URL}/api/data`/signin', {
+    fetch(`${BACKEND_URL}/api/signin`, {
       method: 'post',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
@@ -78,6 +78,7 @@ class Signin extends React.Component {
 
 
 export default Signin;
+
 
 
 
