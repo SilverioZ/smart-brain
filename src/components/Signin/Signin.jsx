@@ -5,7 +5,7 @@ import './Signin.css'
 class Signin extends React.Component { 
   constructor(props) {
     super(props);
-    this.state ={
+    this.state ={https://github.com/SilverioZ/smart-brain/blob/main/src/components/Signin/Signin.jsx
       signInEmail: '',
       signInPassword: ''
     }
@@ -18,7 +18,7 @@ class Signin extends React.Component {
     this.setState({signInPassword: event.target.value})
   }
 	onSubmitSignIn = () => {
-    fetch('http://localhost:${port}/signin', {
+    fetch('http://localhost:3000/signin', {
       method: 'post',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
@@ -78,6 +78,7 @@ class Signin extends React.Component {
 
 
 export default Signin;
+
 
 
 
