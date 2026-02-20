@@ -1,6 +1,6 @@
 import React from 'react';
 import './Signin.css'
-const BACKEND_URL = process.env.BACKEND_URL || 'http://localhost:4000'
+const BACKEND_URL = process.env.BACKEND_URL 
 
 
 class Signin extends React.Component {
@@ -79,6 +79,7 @@ class Signin extends React.Component {
 
 
 export default Signin;
+
 
 
 
