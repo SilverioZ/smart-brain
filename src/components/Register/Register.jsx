@@ -1,4 +1,5 @@
 import React from 'react';
+const BACKEND_URL = process.env.BACKEND_URL 
 
 
 
@@ -90,6 +91,7 @@ class Register extends React.Component {
 
 
 export default Register;
+
 
 
 
