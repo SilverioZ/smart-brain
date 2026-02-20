@@ -24,7 +24,7 @@ class Register extends React.Component {
   }
 
   onSubmitSignIn = () => {
-    fetch(`${BACKEND_URL}/api/data`/register', {
+    fetch(`${BACKEND_URL}/api/register`, {
       method: 'post',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
@@ -89,6 +89,7 @@ class Register extends React.Component {
 
 
 export default Register;
+
 
 
 
