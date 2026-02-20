@@ -2,6 +2,7 @@ import React from 'react';
 
 
 
+
 class Register extends React.Component {
 	constructor(props) {
     super(props);
@@ -24,7 +25,7 @@ class Register extends React.Component {
   }
 
   onSubmitSignIn = () => {
-    fetch('http://localhost:3000/register', {
+    fetch(`${BACKEND_URL/register`, {
       method: 'post',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
@@ -89,6 +90,7 @@ class Register extends React.Component {
 
 
 export default Register;
+
 
 
 
